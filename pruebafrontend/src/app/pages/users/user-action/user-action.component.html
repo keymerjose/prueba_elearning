@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="row">
+        <div class="row">
+            <div class="col-12">
+                <h3>{{accion}} Usuario</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+
+            </div>
+        </div>
+        <div class="col-12">
+            <form id="formUserAction" (submit)="registrar_cambios()">
+                <div class="form-row">
+                    <div class="form-group col-12 col-sm-12 col-md-4 col-lg-4">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre" id="nombre" class="form-control" [(ngModel)]="data_user.name">
+                    </div>
+                    <div class="form-group col-12 col-sm-12 col-md-4 col-lg-4">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" class="form-control" [(ngModel)]="data_user.email">
+                    </div>
+                    <div class="form-group col-12 col-sm-12 col-md-4 col-lg-4">
+                        <label for="identificacion">Identificación:</label>
+                        <input type="number" name="identificacion" id="identificacion" class="form-control" [(ngModel)]="data_user.identificacion">
+                    </div>
+                    <div class="form-group col-12 col-sm-12 col-md-4 col-lg-4" *ngIf="!password">
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" id="password" class="form-control" [(ngModel)]="data_user.password">
+                    </div>
+                    <div class="form-group col-12 col-sm-12 col-md-4 col-lg-4">
+                        <button class="btn btn-primary mt-4" id="btnGuardar"><span>Guardar</span></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
