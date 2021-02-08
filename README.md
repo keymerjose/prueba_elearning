@@ -1,4 +1,7 @@
 Elaborado por: Keymer J. Chacón.
+Tecnologías utilizadas:
+Laravel 7 - backend
+Angular 10 - frontend
 
 Pasos:
 Descargar el proyecto en una carpeta del servidor local.
